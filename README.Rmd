@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# goto
+
+I had too many friends so I made the {goto} package
+
+## Installation
+
+You can install the development version of goto like so:
+
+``` r
+devtools::install_github("moodymudskipper/goto")
+```
+
+## Example
+
+```{r example}
+library(goto)
+foo <- function() {
+  print("a")
+  goto("my label")
+  print("b")
+  ("my label")
+  print("c")
+}
+foo()
+```
